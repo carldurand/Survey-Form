@@ -1,144 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+html,
 body {
-  min-width: 290px;
-  color: #4d4e53;
-  background-color: rgb(189, 159, 250);
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
-}
-
-p {
-  color: black;
-  font-style: italic;
-}
-
-#navbar {
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
-  background-color: #9370DB;
+  background-color: #b1b6b1;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
 }
 
 header {
-  color: black;
-  font-size: 30px;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.8em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: italic;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
 }
 
-#main-doc header {
+#form-outer {
+  background-color: #8e8ca5;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
   text-align: left;
-  margin: 0px;
+  width: 48%;
+  vertical-align: middle;
 }
 
-#navbar ul {
-  height: 88%;
-  overflow-y: auto;
-  overflow-x: hidden;
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
 }
 
-#navbar li {
-  color: black;
-  border: 1px solid;
-  border-bottom-width: 0px;
-  padding: 8px;
-  padding-left: 45px;
-  list-style: none;
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
   position: relative;
-  left: -50px;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-
-}
-
-#navbar a {
-  color: #4d4e53;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#main-doc {
-  position: absolute;
-  margin-left: 310px;
-  padding: 20px;
-  margin-bottom: 110px;
-}
-
-section article {
-  color: #4d4e53;
-  margin: 15px;
-  font-size: 0.96em;
-}
-
-section li {
-  margin: 15px 0px 0px 20px;
-}
-
-code {
+  left: -43px;
+  margin-left: 10px;
   display: block;
-  text-align: left;
-  white-space: pre;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
+  padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 815px) {
-
-  /* For mobile phones: */
-  #navbar ul {
-    border: 1px solid;
-    height: 207px;
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
   }
-
-  #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
-  }
-
-  #main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
-  }
-
-  #main-doc section {
-    /*     padding-top: 240px; */
+  select {
+    width: 90%;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
-  }
-
-  code {
-    margin-left: -20px;
+@media screen and (max-width: 520px) {
+  .labels {
     width: 100%;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
   }
 }
